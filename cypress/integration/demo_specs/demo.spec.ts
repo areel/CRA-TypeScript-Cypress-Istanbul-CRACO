@@ -1,13 +1,13 @@
 describe("When on landing page", () => {
-  // todo configure Cypress to support TypeScript tests
-  // it("should handle typescript based tests", () => {
-  //   const helperMethod = (urlToTest: string) => {
-  //     cy.visit(urlToTest);
-  //     cy.get("[data-testid=strap-line-text]").should("be.visible");
-  //   };
+  // configured Cypress to support TypeScript tests
+  it("should handle typescript based tests", () => {
+    const helperMethod = (urlToTest: string) => {
+      cy.visit(urlToTest);
+      cy.get("[data-testid=strap-line-text]").should("be.visible");
+    };
 
-  //   helperMethod("\\");
-  // });
+    helperMethod("\\");
+  });
 
   it("should be able to see strap line text", () => {
     cy.visit("/");
